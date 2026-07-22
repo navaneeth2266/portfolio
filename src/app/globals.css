@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink-950: #081f10;
+  --color-ink-900: #0d3319;
+  --color-ink-800: #124120;
+  --color-ink-700: #185128;
+  --color-bubblegum: #f3b9f1;
+  --color-bubblegum-dim: #d9a0d8;
+  --color-lime: #b1e94a;
+  --color-lime-dim: #93c93a;
+  --color-tangerine: #e97e2e;
+  --color-cream: #eef2e4;
+  --color-cream-dim: #c9d3ba;
+}
+
+@theme inline {
+  --color-ink-950: var(--color-ink-950);
+  --color-ink-900: var(--color-ink-900);
+  --color-ink-800: var(--color-ink-800);
+  --color-ink-700: var(--color-ink-700);
+  --color-bubblegum: var(--color-bubblegum);
+  --color-bubblegum-dim: var(--color-bubblegum-dim);
+  --color-lime: var(--color-lime);
+  --color-lime-dim: var(--color-lime-dim);
+  --color-tangerine: var(--color-tangerine);
+  --color-cream: var(--color-cream);
+  --color-cream-dim: var(--color-cream-dim);
+
+  --font-display: var(--font-anton), sans-serif;
+  --font-pixel: var(--font-silkscreen), monospace;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ink-900);
+  color: var(--color-cream);
+}
+
+/* Stacked drop-shadow poster heading, e.g. "WORK EXPERIENCE" */
+.heading-stack {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  color: var(--color-bubblegum);
+  text-shadow:
+    0.045em 0.06em 0 rgba(0, 0, 0, 0.88);
+  line-height: 0.86;
+  letter-spacing: 0.01em;
+}
+
+/* Faint graph-paper grid patch, used as decorative backdrop */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(238, 242, 228, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(238, 242, 228, 0.14) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.mask-fade-br {
+  -webkit-mask-image: linear-gradient(to bottom right, black, black 40%, transparent 85%);
+  mask-image: linear-gradient(to bottom right, black, black 40%, transparent 85%);
+}
+
+.mask-fade-tl {
+  -webkit-mask-image: linear-gradient(to top left, black, black 40%, transparent 85%);
+  mask-image: linear-gradient(to top left, black, black 40%, transparent 85%);
+}
+
+.mask-fade-tr {
+  -webkit-mask-image: linear-gradient(to top right, black, black 40%, transparent 85%);
+  mask-image: linear-gradient(to top right, black, black 40%, transparent 85%);
+}
+
+.mask-fade-bl {
+  -webkit-mask-image: linear-gradient(to bottom left, black, black 40%, transparent 85%);
+  mask-image: linear-gradient(to bottom left, black, black 40%, transparent 85%);
+}
+
+::selection {
+  background: var(--color-bubblegum);
+  color: var(--color-ink-950);
+}
+
+/* subtle custom scrollbar to match the theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink-950);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-ink-700);
+  border-radius: 999px;
+}
