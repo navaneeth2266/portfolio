@@ -9,7 +9,7 @@ const roles = [
   {
     title: "Digital Marketing Executive",
     color: "text-lime",
-    body: "Ran digital campaigns for destinations like Uzbekistan and Oman. Created marketing content, social media copy, and landing pages using Figma and Canva to drive engagement.",
+    body: "Ran digital campaigns for destinations like Uzbekistan and Oman. Created marketing content, social media copy, and landing pages using Figma to drive engagement.",
   },
   {
     title: "Multimedia & UI/UX Design",
