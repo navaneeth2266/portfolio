@@ -20,9 +20,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Navaneeth Krishnan P K — Graphic Designer",
+  title: "Navaneeth Krishnan P K — UI/UX Designer",
   description:
-    "Portfolio of Navaneeth Krishnan P K — Digital Marketing Executive, UI/UX & Multimedia Designer.",
+    "Portfolio of Navaneeth Krishnan P K — UI/UX Designer, Digital Marketing Executive & Automation Specialist.",
 };
 
 export default function RootLayout({

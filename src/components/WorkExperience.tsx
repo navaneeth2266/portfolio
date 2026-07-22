@@ -9,17 +9,17 @@ const roles = [
   {
     title: "Digital Marketing Executive",
     color: "text-lime",
-    body: "Ran digital campaigns for destinations like Uzbekistan and Oman. Created marketing content, social media copy, and landing pages using Figma to drive engagement.",
+    body: "I ran digital campaigns for destinations across Asia. I also created marketing content, social media posts, and landing pages using Figma to really drive engagement.",
   },
   {
     title: "Multimedia & UI/UX Design",
     color: "text-bubblegum",
-    body: "Produced and edited multimedia content using Adobe Premiere Pro. Designed clean, user-friendly interfaces to improve how customers interact with our platforms.",
+    body: "I produced and edited multimedia content using Adobe Premiere Pro. I focused on designing clean and simple interfaces to improve how customers interact with our platforms.",
   },
   {
     title: "Workflow Automation",
     color: "text-lime",
-    body: "Wrote custom Python scripts to automate agency operations. This included a system for generating hotel vouchers, tracking flight fares, and managing metadata to save time on repetitive tasks.",
+    body: "I wrote custom Python scripts to automate our agency operations. I built tools to generate hotel vouchers, track flight fares, and manage metadata, which saved us a lot of time on repetitive tasks.",
   },
 ];
 

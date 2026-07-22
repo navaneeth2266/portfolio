@@ -85,7 +85,7 @@ export default function Projects() {
 
           <Reveal delay={0.1} className="max-w-2xl">
             <p className="text-lg leading-relaxed text-cream-dim">
-              Bannerjee is my personal project focused on professional banner and poster design. I use tools like Figma and Canva to turn simple ideas into bold, effective graphics with strong typography. Whether it&apos;s digital marketing assets or print-ready layouts, Bannerjee is where I get to experiment with digital art and visual storytelling for real-world campaigns.
+              Bannerjee is my personal design initiative dedicated to creating high quality banners and posters. Using Figma I transform concepts into bold and effective graphics driven by strong typography. Whether crafting digital marketing materials or print ready layouts this project serves as a showcase for my approach to visual storytelling and professional digital art.
             </p>
           </Reveal>
         </div>

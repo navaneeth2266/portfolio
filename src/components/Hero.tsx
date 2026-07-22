@@ -30,7 +30,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="heading-stack text-[clamp(3rem,10vw,7rem)]"
           >
-            <span className="block">GRAPHIC</span>
+            <span className="block">UI/UX</span>
             <span className="block">DESIGNER</span>
           </motion.h1>
 
