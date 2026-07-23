@@ -28,7 +28,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="heading-stack text-[clamp(3rem,10vw,7rem)]"
+            className="heading-stack text-[clamp(3rem,10vw,7rem)] hollow-purple-text"
           >
             <span className="block">UI/UX</span>
             <span className="block">DESIGNER</span>
@@ -38,7 +38,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.35 }}
-            className="mt-6 font-pixel text-xl tracking-wide text-cream sm:text-2xl"
+            className="mt-6 font-pixel text-xl tracking-wide text-cream sm:text-2xl hollow-purple-text"
           >
             NAVANEETH KRISHNAN P K
           </motion.p>

@@ -17,9 +17,11 @@ export default function SectionHeading({
         }`}
       >
         {lines.map((line) => (
-          <span key={line} className="block">
-            {line}
-          </span>
+          <div key={line} className="block">
+            <span className="hollow-purple-text">
+              {line}
+            </span>
+          </div>
         ))}
       </h2>
     </Reveal>

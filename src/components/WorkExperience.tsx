@@ -32,7 +32,7 @@ export default function WorkExperience() {
         <div className="order-2 space-y-14 md:order-1">
           {roles.map((role, i) => (
             <Reveal key={role.title} delay={i * 0.12}>
-              <h3 className={`font-display text-2xl uppercase tracking-wide sm:text-3xl ${role.color}`}>
+              <h3 className={`font-display text-2xl uppercase tracking-wide sm:text-3xl hollow-purple-text ${role.color}`}>
                 {role.title}
               </h3>
               <p className="mt-3 max-w-md text-base leading-relaxed text-cream-dim">

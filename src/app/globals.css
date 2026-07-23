@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  background: var(--color-ink-900);
+  background-color: #1C0245 !important;
   color: var(--color-cream);
 }
 
@@ -96,3 +96,47 @@ body {
   background: var(--color-ink-700);
   border-radius: 999px;
 }
+
+/* Hollow Purple Blast Animation */
+.hollow-purple-text {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hollow-purple-text:hover {
+  /* Triggers the blast when you hover or tap */
+  animation: hollowPurpleBlast 0.8s ease-out forwards;
+}
+
+@keyframes hollowPurpleBlast {
+  0% {
+    /* Step 1: Text hides, Red spawns left, Blue spawns right */
+    color: transparent;
+    text-shadow: -50px 0px 15px rgba(255, 0, 0, 0.8), 
+                  50px 0px 15px rgba(0, 0, 255, 0.8);
+  }
+  40% {
+    /* Step 2: Red and Blue rush to the center */
+    color: transparent;
+    text-shadow: -10px 0px 25px rgba(255, 0, 0, 1), 
+                  10px 0px 25px rgba(0, 0, 255, 1);
+  }
+  60% {
+    /* Step 3: The Collision & Pop Blast */
+    color: #ffffff;
+    text-shadow: 0px 0px 30px #8a2be2, 
+                 0px 0px 60px #9400d3, 
+                 0px 0px 100px #ff00ff;
+    transform: scale(1.15); /* Text pops outward */
+  }
+  100% {
+    /* Step 4: Settles into a glowing Hollow Purple state */
+    color: #e9d5ff; /* A nice light purple for readability */
+    text-shadow: 0px 0px 10px #8a2be2, 
+                 0px 0px 25px #9400d3, 
+                 0px 0px 50px #4b0082;
+    transform: scale(1.05); /* Stays slightly larger while hovering */
+  }
+}
+
