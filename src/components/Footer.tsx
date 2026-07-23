@@ -1,7 +1,7 @@
 import Reveal from "./Reveal";
 
 const socials = [
-  { label: "Email", href: "mailto:navaneethkrshnanpk02@gmail.com" },
+  { label: "Email", href: "mailto:navaneethkrishnanpk02@gmail.com" },
   { label: "Instagram", href: "https://www.instagram.com/navaneeth___krishnan_/?hl=en" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/navaneeth-krishnan-pk/" },
   { label: "Behance", href: "https://www.behance.net/navaneekrishna159" },
