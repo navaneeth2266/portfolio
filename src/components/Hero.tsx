@@ -53,7 +53,7 @@ export default function Hero() {
               href="mailto:navaneethkrshnanpk02@gmail.com"
               className="inline-flex items-center gap-2 rounded-full border border-cream-dim/30 bg-ink-950/60 px-5 py-3 text-sm text-cream-dim transition-colors hover:border-lime hover:text-lime"
             >
-              navaneethkrshnanpk02@gmail.com
+              navaneethkrishnanpk02@gmail.com
             </a>
           </motion.div>
         </div>

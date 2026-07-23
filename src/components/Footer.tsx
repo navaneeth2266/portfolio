@@ -5,6 +5,7 @@ const socials = [
   { label: "Instagram", href: "https://www.instagram.com/navaneeth___krishnan_/?hl=en" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/navaneeth-krishnan-pk/" },
   { label: "Behance", href: "https://www.behance.net/navaneekrishna159" },
+  { label: "GitHub", href: "https://github.com/navaneeth2266" },
 ];
 
 export default function Footer() {
