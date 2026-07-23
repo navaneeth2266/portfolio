@@ -27,7 +27,7 @@ export default function Projects() {
             theme="light"
             eyebrow="Faygo Strawberry"
             eyebrowColor="var(--color-tangerine)"
-            headline="A Bold Hero Landing Page"
+            headline="UI Front Page"
             delay={0}
             image={{
               src: "/projects/faygo-strawberry.png",
