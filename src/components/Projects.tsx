@@ -25,16 +25,20 @@ export default function Projects() {
           <PosterCard
             rotate={-8}
             theme="light"
-            eyebrow="Employability Skills Webinar"
+            eyebrow="Faygo Strawberry"
             eyebrowColor="var(--color-tangerine)"
-            headline="Learn about Employability Skills"
+            headline="A Bold Hero Landing Page"
             delay={0}
+            image={{
+              src: "/projects/faygo-strawberry.png",
+              alt: "Faygo Strawberry hero landing page design",
+            }}
             footer={
               <div className="flex flex-wrap gap-1.5">
-                {["Communication", "Confidence", "Growth"].map((t) => (
+                {["UI/UX", "Framer Motion", "Branding"].map((t) => (
                   <span
                     key={t}
-                    className="rounded-full bg-ink-900/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
+                    className="rounded-full bg-cream/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-cream"
                   >
                     {t}
                   </span>
