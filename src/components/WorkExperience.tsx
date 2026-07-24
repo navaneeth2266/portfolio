@@ -8,18 +8,19 @@ import GridPatch from "./GridPatch";
 const roles = [
   {
     title: "Digital Marketing Executive",
+    company: "Lindeavecmathew",
     color: "text-lime",
-    body: "I ran digital campaigns for destinations across Asia. I also created marketing content, social media posts, and landing pages using Figma to really drive engagement.",
+    body: "Directed full cycle digital marketing and Meta ad strategies for international tour packages to Uzbekistan Oman and France. Managed all daily marketing operations from creating high performing social media content to developing optimized landing pages consistently driving audience engagement and sustained conversion growth",
   },
   {
-    title: "Multimedia & UI/UX Design",
+    title: "Multimedia & UI Design",
     color: "text-bubblegum",
-    body: "I produced and edited multimedia content using Adobe Premiere Pro. I focused on designing clean and simple interfaces to improve how customers interact with our platforms.",
+    body: "Multimedia & UI/UX Design: Produced and edited high quality multimedia content utilizing Adobe Premiere Pro driving digital engagement. User Interface Optimization: Designed intuitive user centric interfaces for promotional landing pages and customer facing platforms utilizing industry standard UI/UX software including Figma and the Adobe Creative Suite significantly enhancing the digital user journey",
   },
   {
     title: "Workflow Automation",
     color: "text-lime",
-    body: "I wrote custom Python scripts to automate our agency operations. I built tools to generate hotel vouchers, track flight fares, and manage metadata, which saved us a lot of time on repetitive tasks.",
+    body: "Developed Custom Automation Tools: Engineered Python scripts to streamline core company operations, drastically reducing time spent on repetitive manual tasks.\n\nOptimized Business Workflows: Built and deployed internal tools for automated hotel voucher generation, real-time flight fare tracking, and metadata management, improving overall operational efficiency.",
   },
 ];
 
@@ -35,7 +36,12 @@ export default function WorkExperience() {
               <h3 className={`font-display text-2xl uppercase tracking-wide sm:text-3xl hollow-purple-text ${role.color}`}>
                 {role.title}
               </h3>
-              <p className="mt-3 max-w-md text-base leading-relaxed text-cream-dim">
+              {role.company && (
+                <p className="mt-1 font-pixel text-xs tracking-wide text-cream-dim/70">
+                  {role.company}
+                </p>
+              )}
+              <p className="mt-3 max-w-md whitespace-pre-wrap text-base leading-relaxed text-cream-dim">
                 {role.body}
               </p>
             </Reveal>
