@@ -8,18 +8,19 @@ import GridPatch from "./GridPatch";
 const roles = [
   {
     title: "Digital Marketing Executive",
+    company: "Lindeavecmathew",
     color: "text-lime",
-    body: "I ran digital campaigns for destinations across Asia. I also created marketing content, social media posts, and landing pages using Figma to really drive engagement.",
+    body: "I ran digital campaigns and Meta ad strategy for international tour packages across Uzbekistan, Oman, and France. I also created marketing content, social media posts, and landing pages using Figma to really drive engagement.",
   },
   {
-    title: "Multimedia & UI/UX Design",
+    title: "Multimedia & UI Design",
     color: "text-bubblegum",
-    body: "I produced and edited multimedia content using Adobe Premiere Pro. I focused on designing clean and simple interfaces to improve how customers interact with our platforms.",
+    body: "I produced and edited multimedia content using Adobe Premiere Pro, and designed clean, simple UI for promotional pages and customer-facing platforms to improve how customers interact with our products.",
   },
   {
     title: "Workflow Automation",
     color: "text-lime",
-    body: "I wrote custom Python scripts to automate our agency operations. I built tools to generate hotel vouchers, track flight fares, and manage metadata, which saved us a lot of time on repetitive tasks.",
+    body: "Developed Custom Automation Tools: Engineered Python scripts to streamline core company operations, drastically reducing time spent on repetitive manual tasks.\n\nOptimized Business Workflows: Built and deployed internal tools for automated hotel voucher generation, real-time flight fare tracking, and metadata management, significantly improving overall operational efficiency.",
   },
 ];
 
@@ -35,7 +36,12 @@ export default function WorkExperience() {
               <h3 className={`font-display text-2xl uppercase tracking-wide sm:text-3xl hollow-purple-text ${role.color}`}>
                 {role.title}
               </h3>
-              <p className="mt-3 max-w-md text-base leading-relaxed text-cream-dim">
+              {role.company && (
+                <p className="mt-1 font-pixel text-xs tracking-wide text-cream-dim/70">
+                  {role.company}
+                </p>
+              )}
+              <p className="mt-3 max-w-md whitespace-pre-wrap text-base leading-relaxed text-cream-dim">
                 {role.body}
               </p>
             </Reveal>
