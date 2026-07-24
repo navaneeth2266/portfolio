@@ -10,17 +10,17 @@ const roles = [
     title: "Digital Marketing Executive",
     company: "Lindeavecmathew",
     color: "text-lime",
-    body: "Directed full cycle digital marketing and Meta ad strategies for international tour packages to Uzbekistan Oman and France. Managed all daily marketing operations from creating high performing social media content to developing optimized landing pages consistently driving audience engagement and sustained conversion growth",
+    body: `Directed full cycle digital marketing and Meta ad strategies for international tour packages to Uzbekistan Oman and France. Managed all daily marketing operations from creating high performing social media content to developing optimized landing pages consistently driving audience engagement and sustained conversion growth`,
   },
   {
     title: "Multimedia & UI Design",
     color: "text-bubblegum",
-    body: "Multimedia & UI/UX Design: Produced and edited high quality multimedia content utilizing Adobe Premiere Pro driving digital engagement. User Interface Optimization: Designed intuitive user centric interfaces for promotional landing pages and customer facing platforms utilizing industry standard UI/UX software including Figma and the Adobe Creative Suite significantly enhancing the digital user journey",
+    body: `Multimedia & UI/UX Design: Produced and edited high quality multimedia content utilizing Adobe Premiere Pro driving digital engagement. User Interface Optimization: Designed intuitive user centric interfaces for promotional landing pages and customer facing platforms utilizing industry standard UI/UX software including Figma and the Adobe Creative Suite significantly enhancing the digital user journey`,
   },
   {
     title: "Workflow Automation",
     color: "text-lime",
-    body: "Developed Custom Automation Tools: Engineered Python scripts to streamline core company operations, drastically reducing time spent on repetitive manual tasks.\n\nOptimized Business Workflows: Built and deployed internal tools for automated hotel voucher generation, real-time flight fare tracking, and metadata management, improving overall operational efficiency.",
+    body: `Developed Custom Automation Tools: Engineered Python scripts to streamline core company operations, drastically reducing time spent on repetitive manual tasks.\n\nOptimized Business Workflows: Built and deployed internal tools for automated hotel voucher generation, real-time flight fare tracking, and metadata management, improving overall operational efficiency.`,
   },
 ];
 
