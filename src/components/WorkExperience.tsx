@@ -10,7 +10,7 @@ const roles = [
     title: "Digital Marketing Executive",
     company: "Lindeavecmathew",
     color: "text-lime",
-    body: "I ran digital campaigns and Meta ad strategy for international tour packages across Uzbekistan, Oman, and France. I also created marketing content, social media posts, and landing pages using Figma to really drive engagement.",
+    body: "Directed full cycle digital marketing and Meta ad strategies for international tour packages to Uzbekistan Oman and France. Managed all daily marketing operations from creating high performing social media content to developing optimized landing pages consistently driving audience engagement and sustained conversion growth",
   },
   {
     title: "Multimedia & UI Design",
