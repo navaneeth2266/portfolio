@@ -15,7 +15,9 @@ const roles = [
   {
     title: "Multimedia & UI Design",
     color: "text-bubblegum",
-    body: "I produced and edited multimedia content using Adobe Premiere Pro, and designed clean, simple UI for promotional pages and customer-facing platforms to improve how customers interact with our products.",
+    body: "Multimedia & UI/UX Design: Produced and edited high quality multimedia content utilizing Adobe Premiere Pro driving digital engagement.
+
+",
   },
   {
     title: "Workflow Automation",
