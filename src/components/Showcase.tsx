@@ -7,12 +7,12 @@ import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
 const posters = [
-  { src: "/posters/Attukal Pongala.jpg", title: "Attukal Pongala", tag: "Festival" },
-  { src: "/posters/Holi.jpg", title: "Joyeux Holi", tag: "Festival" },
   { src: "/posters/France National Day.png", title: "Fête Nationale", tag: "14 Juillet" },
   { src: "/posters/Music festival.png", title: "Fête de la Musique", tag: "21 Juin" },
   { src: "/posters/Yoga Day.png", title: "Journée du Yoga", tag: "21 Juin" },
+  { src: "/posters/Holi.jpg", title: "Joyeux Holi", tag: "Festival" },
   { src: "/posters/Kerala.jpg", title: "Ayurvedic Wellness", tag: "Health" },
+  { src: "/posters/Attukal Pongala.jpg", title: "Attukal Pongala", tag: "Festival" },
 ];
 
 const tilts = [-4, 3, -2, 4, -3, 2];
