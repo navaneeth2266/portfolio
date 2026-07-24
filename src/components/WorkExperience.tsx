@@ -20,7 +20,7 @@ const roles = [
   {
     title: "Workflow Automation",
     color: "text-lime",
-    body: "Developed Custom Automation Tools: Engineered Python scripts to streamline core company operations, drastically reducing time spent on repetitive manual tasks.\n\nOptimized Business Workflows: Built and deployed internal tools for automated hotel voucher generation, real-time flight fare tracking, and metadata management, significantly improving overall operational efficiency.",
+    body: "Developed Custom Automation Tools: Engineered Python scripts to streamline core company operations, drastically reducing time spent on repetitive manual tasks.\n\nOptimized Business Workflows: Built and deployed internal tools for automated hotel voucher generation, real-time flight fare tracking, and metadata management, improving overall operational efficiency.",
   },
 ];
 
