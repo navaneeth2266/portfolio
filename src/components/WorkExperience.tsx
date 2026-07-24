@@ -15,9 +15,7 @@ const roles = [
   {
     title: "Multimedia & UI Design",
     color: "text-bubblegum",
-    body: "Multimedia & UI/UX Design: Produced and edited high quality multimedia content utilizing Adobe Premiere Pro driving digital engagement.
-
-",
+    body: "Multimedia & UI/UX Design: Produced and edited high quality multimedia content utilizing Adobe Premiere Pro driving digital engagement.",
   },
   {
     title: "Workflow Automation",
