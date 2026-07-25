@@ -40,9 +40,8 @@ export default function Nav() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-ink-950/85 backdrop-blur-md shadow-lg shadow-black/20" : "bg-transparent"
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${scrolled ? "bg-ink-950/85 backdrop-blur-md shadow-lg shadow-black/20" : "bg-transparent"
+        }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a
