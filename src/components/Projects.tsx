@@ -70,14 +70,25 @@ export default function Projects() {
           <PosterCard
             rotate={-4}
             theme="light"
-            eyebrow="Apex Med Tutorial"
+            eyebrow="Ente"
             eyebrowColor="var(--color-lime)"
-            headline={"Don't Just Memorize. Understand. Apply. Excel."}
+            headline="On This Day, Animated"
             delay={0.24}
+            image={{
+              src: "/projects/entee-on-this-day.png",
+              alt: "Ente On This Day photo memory card with a double-tap like animation",
+            }}
             footer={
-              <span className="inline-block rounded-full bg-ink-900 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-lime">
-                Admissions Open
-              </span>
+              <div className="flex flex-wrap gap-1.5">
+                {["Framer Motion", "Micro-interactions", "Next.js"].map((t) => (
+                  <span
+                    key={t}
+                    className="rounded-full bg-cream/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-cream"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
             }
           />
         </div>
