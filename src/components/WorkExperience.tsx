@@ -39,11 +39,11 @@ export default function WorkExperience() {
                 {role.title}
               </h3>
               {role.company && (
-                <p className="mt-1 font-pixel text-xs tracking-wide text-cream-dim/70">
+                <p className="mt-1 font-plus-jakarta-sans text-xs tracking-wide text-cream-dim/70">
                   {role.company}
                 </p>
               )}
-              <p className="mt-3 max-w-md whitespace-pre-wrap text-base leading-relaxed text-cream-dim">
+              <p className="mt-3 max-w-md font-plus-jakarta-sans whitespace-pre-wrap text-base leading-relaxed text-cream-dim">
                 {role.body}
               </p>
             </Reveal>

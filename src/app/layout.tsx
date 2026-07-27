@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Anton, Silkscreen, Inter } from "next/font/google";
+import { Anton, Silkscreen, Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 const anton = Anton({
   variable: "--font-anton",
   weight: "400",
+  subsets: ["latin"],
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
 });
 
@@ -33,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${anton.variable} ${silkscreen.variable} ${inter.variable}`}
+      className={`${anton.variable} ${silkscreen.variable} ${inter.variable} ${plusJakartaSans.variable}`}
     >
       <body className="min-h-full bg-ink-900 font-sans text-cream antialiased">
         {children}
