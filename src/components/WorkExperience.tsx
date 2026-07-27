@@ -28,22 +28,22 @@ const roles = [
 
 export default function WorkExperience() {
   return (
-    <section id="experience" className="relative scroll-mt-24 overflow-hidden py-28">
+    <section id="experience" className="relative scroll-mt-24 overflow-hidden py-28 font-plus-jakarta-sans">
       <GridPatch corner="top-right" className="right-0 top-0 h-96 w-96" />
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 px-6 md:grid-cols-[1fr_1fr] md:items-start">
         <div className="order-2 space-y-14 md:order-1">
           {roles.map((role, i) => (
             <Reveal key={role.title} delay={i * 0.12}>
-              <h3 className={`font-display text-2xl uppercase tracking-wide sm:text-3xl hollow-purple-text ${role.color}`}>
+              <h3 className={`font-display text-3xl uppercase tracking-wide sm:text-4xl hollow-purple-text ${role.color}`}>
                 {role.title}
               </h3>
               {role.company && (
-                <p className="mt-1 font-pixel text-xs tracking-wide text-cream-dim/70">
+                <p className="mt-1 font-plus-jakarta-sans text-sm tracking-wide text-cream-dim/70">
                   {role.company}
                 </p>
               )}
-              <p className="mt-3 max-w-md whitespace-pre-wrap text-base leading-relaxed text-cream-dim">
+              <p className="mt-3 max-w-md font-plus-jakarta-sans whitespace-pre-wrap text-lg leading-relaxed text-cream-dim">
                 {role.body}
               </p>
             </Reveal>

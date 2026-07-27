@@ -93,17 +93,7 @@ export default function Projects() {
           />
         </div>
 
-        <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-[auto_1fr] md:items-center">
-          <Float duration={5.5} className="hidden justify-self-end md:block w-28">
-            <EyesHeadphones />
-          </Float>
 
-          <Reveal delay={0.1} className="max-w-2xl">
-            <p className="text-lg leading-relaxed text-cream-dim">
-              Bannerjee is my personal design initiative dedicated to creating high quality banners and posters. Using Figma I transform concepts into bold and effective graphics driven by strong typography. Whether crafting digital marketing materials or print ready layouts this project serves as a showcase for my approach to visual storytelling and professional digital art.
-            </p>
-          </Reveal>
-        </div>
       </div>
     </section>
   );
