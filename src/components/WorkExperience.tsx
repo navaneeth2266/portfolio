@@ -28,14 +28,14 @@ const roles = [
 
 export default function WorkExperience() {
   return (
-    <section id="experience" className="relative scroll-mt-24 overflow-hidden py-28">
+    <section id="experience" className="relative scroll-mt-24 overflow-hidden py-28 font-plus-jakarta-sans">
       <GridPatch corner="top-right" className="right-0 top-0 h-96 w-96" />
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 px-6 md:grid-cols-[1fr_1fr] md:items-start">
         <div className="order-2 space-y-14 md:order-1">
           {roles.map((role, i) => (
             <Reveal key={role.title} delay={i * 0.12}>
-              <h3 className={`font-display text-2xl uppercase tracking-wide sm:text-3xl hollow-purple-text ${role.color}`}>
+              <h3 className={`font-display text-3xl uppercase tracking-wide sm:text-4xl hollow-purple-text ${role.color}`}>
                 {role.title}
               </h3>
               {role.company && (

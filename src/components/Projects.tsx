@@ -70,29 +70,30 @@ export default function Projects() {
           <PosterCard
             rotate={-4}
             theme="light"
-            eyebrow="Apex Med Tutorial"
+            eyebrow="Ente"
             eyebrowColor="var(--color-lime)"
-            headline={"Don't Just Memorize. Understand. Apply. Excel."}
+            headline="On This Day, Animated"
             delay={0.24}
+            image={{
+              src: "/projects/entee-on-this-day.png",
+              alt: "Ente On This Day photo memory card with a double-tap like animation",
+            }}
             footer={
-              <span className="inline-block rounded-full bg-ink-900 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-lime">
-                Admissions Open
-              </span>
+              <div className="flex flex-wrap gap-1.5">
+                {["Framer Motion", "Micro-interactions", "Next.js"].map((t) => (
+                  <span
+                    key={t}
+                    className="rounded-full bg-cream/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-cream"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
             }
           />
         </div>
 
-        <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-[auto_1fr] md:items-center">
-          <Float duration={5.5} className="hidden justify-self-end md:block w-28">
-            <EyesHeadphones />
-          </Float>
 
-          <Reveal delay={0.1} className="max-w-2xl">
-            <p className="text-lg leading-relaxed text-cream-dim">
-              Bannerjee is my personal design initiative dedicated to creating high quality banners and posters. Using Figma I transform concepts into bold and effective graphics driven by strong typography. Whether crafting digital marketing materials or print ready layouts this project serves as a showcase for my approach to visual storytelling and professional digital art.
-            </p>
-          </Reveal>
-        </div>
       </div>
     </section>
   );

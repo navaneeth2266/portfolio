@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 
@@ -40,12 +39,11 @@ export default function PosterCard({
     >
       {image ? (
         <>
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element -- plain img avoids next/image stripping animated PNG/GIF frames */}
+          <img
             src={image.src}
             alt={image.alt}
-            fill
-            sizes="(min-width: 640px) 288px, 256px"
-            className="object-cover"
+            className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink-950/90 via-ink-950/15 to-transparent" />
         </>

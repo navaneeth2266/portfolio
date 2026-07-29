@@ -27,7 +27,7 @@ export default function Showcase() {
         <SectionHeading lines={["POSTER", "GALLERY"]} />
 
         <Reveal delay={0.12} className="mt-6 max-w-xl">
-          <p className="text-lg leading-relaxed text-cream-dim">
+          <p className="font-plus-jakarta-sans text-lg leading-relaxed text-cream-dim">
             A quick look at some banners, including festival greetings and promotional posts made for actual campaigns.
           </p>
         </Reveal>
