@@ -12,7 +12,7 @@ export default function AboutMe() {
 
           <Reveal delay={0.15} className="mt-10 max-w-xl">
             <p className="text-lg leading-relaxed text-cream-dim">
-              Hello, I&apos;m Navaneeth Krishnan P K, a UI/UX Designer focused on turning complex user journeys into clean, intuitive interfaces. I design with a logical mindset that puts users first, balancing visual craft with functional clarity in every interface I build in Figma. Alongside design, I bring hands-on experience in digital marketing execution and workflow automation using Python, giving me a practical lens on how design decisions translate into real business outcomes.
+              Hello I&apos;m Navaneeth Krishnan P K. I&apos;m a UI/UX Designer focused on turning complex user journeys into clean intuitive interfaces. I design with a logical mindset that puts users first while balancing visual craft with functional clarity in every interface I build in Figma. Alongside design I bring hands on experience in digital marketing execution and workflow automation using Python. This gives me a practical lens on how design decisions translate into real business outcomes.
             </p>
           </Reveal>
 
