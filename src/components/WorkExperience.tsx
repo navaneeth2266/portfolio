@@ -15,9 +15,7 @@ const roles = [
   {
     title: "Multimedia & UI Design",
     color: "text-bubblegum",
-    body: `Produced and edited high quality multimedia content utilizing Adobe Premiere Pro driving digital engagement. User Interface Optimization: Designed intuitive user centric interfaces for promotional landing pages and customer facing platforms utilizing industry standard UI/UX software including Figma and the Adobe Creative Suite significantly enhancing the digital user journey
-
-`,
+    body: `Produced and edited high quality multimedia content utilizing Adobe Premiere Pro driving digital engagement. User Interface Optimization: Designed intuitive, user-centric interfaces in Figma for promotional landing pages and customer-facing platforms, from wireframes through high-fidelity prototypes, elevating usability and streamlining the digital user journey across touchpoints.`,
   },
   {
     title: "Workflow Automation",
