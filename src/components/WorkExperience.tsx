@@ -20,7 +20,7 @@ const roles = [
   {
     title: "Workflow Automation",
     color: "text-lime",
-    body: `Engineered Python scripts that streamlined core company operations and drastically cut time spent on repetitive manual tasks.\n\nBuilt and deployed internal tools for automated hotel voucher generation real time flight fare tracking and metadata management significantly improving overall operational efficiency.`,
+    body: `Engineered Python scripts that streamlined core company operations and drastically cut time spent on repetitive manual tasks. Built and deployed internal tools for automated hotel voucher generation real time flight fare tracking and metadata management significantly improving overall operational efficiency.`,
   },
 ];
 
