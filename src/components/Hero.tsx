@@ -15,14 +15,7 @@ export default function Hero() {
 
       <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-16 px-6 md:grid-cols-2">
         <div>
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mb-4 font-pixel text-xs tracking-[0.3em] text-lime"
-          >
-            PORTFOLIO — SAY HELLO
-          </motion.p>
+
 
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
