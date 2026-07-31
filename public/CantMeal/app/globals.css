@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #fff5f0;
+  --color-brand-100: #ffe6d9;
+  --color-brand-200: #ffc7ad;
+  --color-brand-300: #ffa37d;
+  --color-brand-400: #ff7a4d;
+  --color-brand-500: #ff5630;
+  --color-brand-600: #ed3e14;
+  --color-brand-700: #c62d0c;
+  --color-brand-800: #9e260f;
+  --color-brand-900: #7f2210;
+  --color-brand-950: #451006;
+
+  --color-moss-50: #effbf6;
+  --color-moss-100: #d7f5e9;
+  --color-moss-200: #aeead3;
+  --color-moss-300: #7adab9;
+  --color-moss-400: #45c29b;
+  --color-moss-500: #22a67f;
+  --color-moss-600: #158567;
+  --color-moss-700: #126a54;
+  --color-moss-800: #115444;
+  --color-moss-900: #0f4539;
+  --color-moss-950: #06271f;
+
+  --color-ink: #15130f;
+  --color-paper: #fffcf7;
+}
+
+/* `inline` so these resolve against the CSS custom properties next/font
+   attaches at runtime (via their `variable` option) rather than being
+   statically baked in at build time. */
+@theme inline {
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-float-slow {
+    animation: none;
+  }
+}

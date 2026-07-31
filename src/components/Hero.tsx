@@ -43,19 +43,7 @@ export default function Hero() {
             NAVANEETH KRISHNAN P K
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-8"
-          >
-            <a
-              href="mailto:navaneethkrshnanpk02@gmail.com"
-              className="inline-flex items-center gap-2 rounded-full border border-cream-dim/30 bg-ink-950/60 px-5 py-3 text-sm text-cream-dim transition-colors hover:border-lime hover:text-lime"
-            >
-              navaneethkrishnanpk02@gmail.com
-            </a>
-          </motion.div>
+
         </div>
 
         <PhotoCard />
