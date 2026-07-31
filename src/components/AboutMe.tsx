@@ -12,7 +12,7 @@ export default function AboutMe() {
 
           <Reveal delay={0.15} className="mt-10 max-w-xl">
             <p className="text-lg leading-relaxed text-cream-dim">
-              Digital Marketing Executive with hands-on UI/UX design experience in Figma, blending data-driven campaign strategy with user-centered interface design. Skilled in full-funnel social media growth, landing page and interface design, and cross-functional collaboration that turns creative work into measurable engagement and lead-generation results.
+              Digital Marketing Executive with hands on UI/UX design expertise in Figma. I merge data driven campaign strategy with user centered interface design to help global brands grow their digital presence. Skilled in full funnel social media growth landing page and interface design and cross functional collaboration that turns creative work into measurable engagement and lead generation results for international markets.
             </p>
           </Reveal>
 
