@@ -31,6 +31,17 @@ export default function Footer() {
           ))}
         </Reveal>
 
+        <Reveal delay={0.2} className="mt-10">
+          <a
+            href="https://docs.google.com/document/d/1xgwEJUMj2gsPHG2w2tbfxbXjFUEQvDoy/edit?usp=sharing&ouid=116099497576566888775&rtpof=true&sd=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full bg-lime px-6 py-3 font-pixel text-sm tracking-wide text-ink-950 transition-transform hover:scale-105"
+          >
+            View Resume / CV
+          </a>
+        </Reveal>
+
         <Reveal
           delay={0.3}
           className="mt-16 flex flex-col gap-4 text-xs uppercase tracking-widest text-cream-dim/60 sm:flex-row sm:items-center sm:justify-between"
