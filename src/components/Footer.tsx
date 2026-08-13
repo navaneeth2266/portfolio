@@ -33,7 +33,7 @@ export default function Footer() {
 
         <Reveal delay={0.2} className="mt-10">
           <a
-            href="https://docs.google.com/document/d/1xgwEJUMj2gsPHG2w2tbfxbXjFUEQvDoy/edit?usp=sharing&ouid=116099497576566888775&rtpof=true&sd=true"
+            href="https://drive.google.com/drive/folders/1V7U9uiBlqVUzvnVJyhtrFkLR54GDrQX2?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block rounded-full bg-lime px-6 py-3 font-pixel text-sm tracking-wide text-ink-950 transition-transform hover:scale-105"
