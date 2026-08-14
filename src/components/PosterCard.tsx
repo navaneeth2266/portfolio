@@ -11,6 +11,7 @@ export default function PosterCard({
   headline,
   footer,
   image,
+  href,
   delay = 0,
   className = "",
 }: {
@@ -21,12 +22,13 @@ export default function PosterCard({
   headline: string;
   footer: ReactNode;
   image?: { src: string; alt: string };
+  href?: string;
   delay?: number;
   className?: string;
 }) {
   const isLight = theme === "light";
 
-  return (
+  const card = (
     <motion.div
       initial={{ opacity: 0, y: 40, rotate: rotate * 1.6 }}
       whileInView={{ opacity: 1, y: 0, rotate }}
@@ -34,6 +36,8 @@ export default function PosterCard({
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] }}
       className={`relative flex aspect-[3/4] w-64 flex-col justify-between overflow-hidden rounded-2xl border-4 border-ink-950 p-5 shadow-[8px_8px_0_rgba(0,0,0,0.45)] sm:w-72 ${
+        href ? "cursor-pointer" : ""
+      } ${
         image ? "text-cream" : isLight ? "bg-cream text-ink-950" : "bg-ink-950 text-cream"
       } ${className}`}
     >
@@ -74,5 +78,19 @@ export default function PosterCard({
         </>
       )}
     </motion.div>
+  );
+
+  if (!href) return card;
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block"
+      aria-label={`Open ${eyebrow} live site`}
+    >
+      {card}
+    </a>
   );
 }

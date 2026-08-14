@@ -50,18 +50,21 @@ export default function Projects() {
           <PosterCard
             rotate={3}
             theme="dark"
-            eyebrow="Bannerjee"
+            eyebrow="MessMate"
             eyebrowColor="var(--color-lime)"
-            headline="For All Your Marketing Needs"
+            headline="Skip The Recess Queue"
             delay={0.12}
             className="sm:-translate-y-4"
+            href="https://cant-meal.vercel.app/"
             footer={
-              <div className="flex gap-2">
-                {[0, 1, 2].map((i) => (
-                  <div
-                    key={i}
-                    className="h-10 flex-1 rounded-md bg-cream/10"
-                  />
+              <div className="flex flex-wrap gap-1.5">
+                {["Next.js", "Product Design", "Waitlist"].map((t) => (
+                  <span
+                    key={t}
+                    className="rounded-full bg-cream/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-cream"
+                  >
+                    {t}
+                  </span>
                 ))}
               </div>
             }
