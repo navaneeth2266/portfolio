@@ -56,6 +56,10 @@ export default function Projects() {
             delay={0.12}
             className="sm:-translate-y-4"
             href="https://cant-meal.vercel.app/"
+            image={{
+              src: "/projects/messmate.png",
+              alt: "MessMate landing page hero with the Skip the recess queue headline",
+            }}
             footer={
               <div className="flex flex-wrap gap-1.5">
                 {["Next.js", "Product Design", "Waitlist"].map((t) => (
