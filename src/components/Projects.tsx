@@ -79,7 +79,7 @@ export default function Projects() {
             theme="light"
             eyebrow="Ente"
             eyebrowColor="var(--color-lime)"
-            headline="On This Day, Animated"
+            headline="On This Day"
             delay={0.24}
             image={{
               src: "/projects/entee-on-this-day.png",
