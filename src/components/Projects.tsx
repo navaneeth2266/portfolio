@@ -55,7 +55,7 @@ export default function Projects() {
             headline="Skip The Recess Queue"
             delay={0.12}
             className="sm:-translate-y-4"
-            href="https://cant-meal.vercel.app/"
+            href="https://messmate.food/"
             image={{
               src: "/projects/messmate.png",
               alt: "MessMate landing page hero with the Skip the recess queue headline",
