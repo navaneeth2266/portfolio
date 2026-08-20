@@ -11,7 +11,7 @@ const posters = [
   { src: "/posters/Music festival.png", title: "Fête de la Musique", tag: "21 Juin" },
   { src: "/posters/France National Day.png", title: "Fête Nationale", tag: "14 Juillet" },
   { src: "/posters/Yoga Day.png", title: "Journée du Yoga", tag: "21 Juin" },
-  { src: "/posters/Holi.jpg", title: "Joyeux Holi", tag: "Festival" },
+  { src: "/posters/Gruns.png", title: "Grüns Nutrition", tag: "Campaign" },
   { src: "/posters/Kerala.jpg", title: "Ayurvedic Wellness", tag: "Health" },
   { src: "/posters/Attukal Pongala.jpg", title: "Attukal Pongala", tag: "Festival" },
 ];
