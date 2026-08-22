@@ -27,7 +27,7 @@
   --color-cream: var(--color-cream);
   --color-cream-dim: var(--color-cream-dim);
 
-  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-display: var(--font-chakra-petch), sans-serif;
   --font-pixel: var(--font-silkscreen), monospace;
   --font-sans: var(--font-inter), sans-serif;
   --font-plus-jakarta-sans: var(--font-plus-jakarta-sans), sans-serif;
@@ -47,7 +47,7 @@ body {
   font-family: var(--font-display);
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--color-bubblegum);
+  color: #ffffff;
   text-shadow:
     0.045em 0.06em 0 rgba(0, 0, 0, 0.88);
   line-height: 0.86;

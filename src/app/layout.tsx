@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Silkscreen, Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Chakra_Petch, Silkscreen, Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const chakraPetch = Chakra_Petch({
+  variable: "--font-chakra-petch",
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -37,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${silkscreen.variable} ${inter.variable} ${plusJakartaSans.variable}`}
+      className={`${chakraPetch.variable} ${silkscreen.variable} ${inter.variable} ${plusJakartaSans.variable}`}
     >
       <body className="min-h-full bg-ink-900 font-sans text-cream antialiased">
         {children}
