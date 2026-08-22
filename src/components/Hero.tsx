@@ -33,7 +33,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.35 }}
             className="mt-6 font-pixel text-xl tracking-wide text-cream sm:text-2xl hollow-purple-text"
           >
-            NAVANEETH KRISHNAN P K
+            NAVANEETH KRISHNAN P&nbsp;K
           </motion.p>
 
 
