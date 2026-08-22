@@ -71,7 +71,7 @@ export default function Showcase() {
                   <span className="inline-block rounded-full bg-lime px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-ink-950">
                     {poster.tag}
                   </span>
-                  <p className="mt-2 font-display text-xl uppercase leading-none tracking-wide text-cream">
+                  <p className="mt-2 font-display font-bold text-xl uppercase leading-none tracking-wide text-cream">
                     {poster.title}
                   </p>
                 </div>

@@ -64,14 +64,14 @@ export default function PosterCard({
 
       {image ? (
         <div className="relative flex flex-col gap-3">
-          <p className="font-display text-2xl uppercase leading-[0.95] tracking-wide sm:text-3xl">
+          <p className="font-display font-bold text-2xl uppercase leading-[0.95] tracking-wide sm:text-3xl">
             {headline}
           </p>
           {footer}
         </div>
       ) : (
         <>
-          <p className="relative font-display text-2xl uppercase leading-[0.95] tracking-wide sm:text-3xl">
+          <p className="relative font-display font-bold text-2xl uppercase leading-[0.95] tracking-wide sm:text-3xl">
             {headline}
           </p>
           <div className="relative">{footer}</div>

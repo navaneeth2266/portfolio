@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Anton, Silkscreen, Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Space_Grotesk, Silkscreen, Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const anton = Anton({
-  variable: "--font-anton",
-  weight: "400",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
 });
 
@@ -38,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${anton.variable} ${silkscreen.variable} ${inter.variable} ${plusJakartaSans.variable}`}
+      className={`${spaceGrotesk.variable} ${silkscreen.variable} ${inter.variable} ${plusJakartaSans.variable}`}
     >
       <body className="min-h-full bg-ink-900 font-sans text-cream antialiased">
         {children}
