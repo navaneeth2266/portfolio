@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Chakra_Petch, Silkscreen, Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Chakra_Petch, Silkscreen, Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
 const chakraPetch = Chakra_Petch({
@@ -8,8 +8,9 @@ const chakraPetch = Chakra_Petch({
   subsets: ["latin"],
 });
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta-sans",
+const poppins = Poppins({
+  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -38,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${chakraPetch.variable} ${silkscreen.variable} ${inter.variable} ${plusJakartaSans.variable}`}
+      className={`${chakraPetch.variable} ${silkscreen.variable} ${inter.variable} ${poppins.variable}`}
     >
       <body className="min-h-full bg-ink-900 font-sans text-cream antialiased">
         {children}

@@ -11,13 +11,13 @@ export default function AboutMe() {
           <SectionHeading lines={["ABOUT", "ME"]} />
 
           <Reveal delay={0.15} className="mt-10 max-w-xl">
-            <p className="text-lg leading-relaxed text-cream-dim">
+            <p className="font-poppins text-lg leading-relaxed text-cream-dim">
               Digital Marketing Executive with hands on UI/UX design expertise in Figma. I merge data driven campaign strategy with user centered interface design to help global brands grow their digital presence. Skilled in full funnel social media growth landing page and interface design and cross functional collaboration that turns creative work into measurable engagement and lead generation results for international markets.
             </p>
           </Reveal>
 
           <Reveal delay={0.3} className="mt-8 max-w-xl border-l-2 border-lime/60 pl-6">
-            <p className="text-base leading-relaxed text-cream-dim/90">
+            <p className="font-poppins text-base leading-relaxed text-cream-dim/90">
               When I&apos;m off the clock, I like to keep things hands-on. You&apos;ll
               usually find me wrenching on my motorcycle, planning my next
               camping trip, or unwinding with video games and indie rock.
