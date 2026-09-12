@@ -12,10 +12,10 @@ const posters = [
   { src: "/posters/France National Day.png", title: "Fête Nationale", tag: "14 Juillet" },
   { src: "/posters/Yoga Day.png", title: "Journée du Yoga", tag: "21 Juin" },
   {
-    src: "/posters/Gruns.png",
-    title: "Grüns Nutrition",
+    src: "/posters/Messmate.png",
+    title: "MessMate",
     tag: "Campaign",
-    href: "https://www.figma.com/design/Vhfb83uzP6CTXPr5iByens/Gruns?node-id=2086-9&t=RLxjnpiDJgsnuaNA-1",
+    href: "https://messmate.food/",
   },
   { src: "/posters/Kerala.jpg", title: "Ayurvedic Wellness", tag: "Health" },
   { src: "/posters/Attukal Pongala.jpg", title: "Attukal Pongala", tag: "Festival" },
