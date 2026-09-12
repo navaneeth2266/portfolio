@@ -15,7 +15,7 @@ const posters = [
     src: "/posters/Messmate.png",
     title: "MessMate",
     tag: "Campaign",
-    href: "https://messmate.food/",
+    href: "https://www.figma.com/design/Vhfb83uzP6CTXPr5iByens/Messmate?node-id=0-1&t=mcmgJl2ZmcotUMuq-1",
   },
   { src: "/posters/Kerala.jpg", title: "Ayurvedic Wellness", tag: "Health" },
   { src: "/posters/Attukal Pongala.jpg", title: "Attukal Pongala", tag: "Festival" },
