@@ -71,12 +71,12 @@ export default function Showcase() {
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink-950/90 via-ink-950/5 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-4">
-                  <span className="inline-block rounded-full bg-lime px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-ink-950">
+                <div className="absolute inset-0 bg-gradient-to-t from-ink-950/90 via-ink-950/20 to-transparent pointer-events-none" />
+                <div className="absolute inset-x-0 bottom-0 flex flex-col items-start gap-2 p-5 z-10">
+                  <span className="inline-block rounded-full bg-lime px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-ink-950 shadow-sm">
                     {poster.tag}
                   </span>
-                  <p className="mt-2 font-display font-bold text-xl uppercase leading-none tracking-wide text-cream">
+                  <p className="font-display font-bold text-xl uppercase leading-snug tracking-wide text-cream drop-shadow-md">
                     {poster.title}
                   </p>
                 </div>
