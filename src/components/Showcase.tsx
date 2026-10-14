@@ -8,7 +8,7 @@ import SectionHeading from "./SectionHeading";
 
 const posters = [
 
-  { src: "/posters/Music festival.png", title: "Fête de la Musique", tag: "21 Juin" },
+  { src: "/posters/Lotte Choco Pie.jpg", title: "Lotte Choco Pie", tag: "Campaign" },
   {
     src: "/posters/Liquid Death.png",
     title: "Liquid Death",
