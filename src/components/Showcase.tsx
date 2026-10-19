@@ -22,7 +22,7 @@ const posters = [
     tag: "Campaign",
     href: "https://www.figma.com/design/Vhfb83uzP6CTXPr5iByens/Messmate?node-id=0-1&t=mcmgJl2ZmcotUMuq-1",
   },
-  { src: "/posters/Kerala.jpg", title: "Ayurvedic Wellness", tag: "Health" },
+  { src: "/posters/Connemara Tea.png", title: "Connemara Tea", tag: "Heritage" },
   { src: "/posters/Attukal Pongala.jpg", title: "Attukal Pongala", tag: "Festival" },
 ];
 
