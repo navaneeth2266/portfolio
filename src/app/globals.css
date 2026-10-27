@@ -119,3 +119,26 @@ body {
     0 0 36px var(--color-bubblegum);
 }
 
+/* Equalizer bars shown while a track is actively playing */
+@keyframes eq {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.eq-bar {
+  transform-origin: bottom;
+  animation: eq 0.9s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eq-bar {
+    animation: none;
+    transform: scaleY(0.7);
+  }
+}
+

@@ -1,6 +1,7 @@
 import Float from "./Float";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
+import NowPlaying from "./NowPlaying";
 import Camera from "./doodles/Camera";
 
 export default function AboutMe() {
@@ -22,6 +23,10 @@ export default function AboutMe() {
               usually find me wrenching on my motorcycle, planning my next
               camping trip, or unwinding with video games and indie rock.
             </p>
+          </Reveal>
+
+          <Reveal delay={0.45} className="mt-8 max-w-xl">
+            <NowPlaying />
           </Reveal>
         </div>
 

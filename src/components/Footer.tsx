@@ -1,4 +1,6 @@
+import { spotifyProfileUrl } from "@/lib/site";
 import Reveal from "./Reveal";
+import SpotifyIcon from "./SpotifyIcon";
 
 const socials = [
   { label: "Email", href: "mailto:navaneethkrishnanpk02@gmail.com" },
@@ -6,6 +8,7 @@ const socials = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/navaneeth-krishnan-pk/" },
   { label: "Behance", href: "https://www.behance.net/navaneekrishna159" },
   { label: "GitHub", href: "https://github.com/navaneeth2266" },
+  { label: "Spotify", href: spotifyProfileUrl, icon: <SpotifyIcon className="size-4" /> },
 ];
 
 export default function Footer() {
@@ -23,8 +26,9 @@ export default function Footer() {
             <a
               key={s.label}
               href={s.href}
-              className="group relative font-pixel text-sm tracking-wide text-cream-dim transition-colors hover:text-lime"
+              className="group relative inline-flex items-center gap-2 font-pixel text-sm tracking-wide text-cream-dim transition-colors hover:text-lime"
             >
+              {s.icon}
               {s.label}
               <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-lime transition-all duration-300 group-hover:w-full" />
             </a>
