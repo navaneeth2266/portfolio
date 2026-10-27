@@ -44,7 +44,7 @@ export default function WorkExperience() {
                       href={role.companyUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-bold underline underline-offset-4 transition-colors hover:text-lime"
+                      className="font-bold transition-colors hover:text-lime"
                     >
                       {role.company}
                     </a>
