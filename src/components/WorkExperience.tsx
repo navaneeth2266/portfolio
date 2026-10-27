@@ -8,7 +8,8 @@ import GridPatch from "./GridPatch";
 const roles = [
   {
     title: "Digital Marketing Executive",
-    company: "Lindeavecmathew",
+    company: "Mathew Voyages Pvt Ltd",
+    companyUrl: "https://mathewvoyages.com/",
     color: "text-lime",
     body: `Directed full cycle digital marketing and Meta ad strategies for international tour packages to Uzbekistan Oman and France. Managed all daily marketing operations from creating high performing social media content to developing optimized landing pages consistently driving audience engagement and sustained conversion growth`,
   },
@@ -38,7 +39,18 @@ export default function WorkExperience() {
               </h3>
               {role.company && (
                 <p className="mt-1 font-poppins text-xs tracking-wide text-cream-dim/70">
-                  {role.company}
+                  {role.companyUrl ? (
+                    <a
+                      href={role.companyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-bold underline underline-offset-4 transition-colors hover:text-lime"
+                    >
+                      {role.company}
+                    </a>
+                  ) : (
+                    role.company
+                  )}
                 </p>
               )}
               <p className="mt-3 max-w-md font-poppins whitespace-pre-wrap text-base leading-relaxed text-cream-dim">
