@@ -146,7 +146,36 @@ body {
   animation: spin-slow 8s linear infinite;
 }
 
+/* Bold inline link: lime underline that fills into a highlight on hover.
+   Drawn as a background (not a pseudo-element) so it follows the text
+   across line wraps. */
+.hobby-link {
+  font-weight: 700;
+  color: var(--color-cream);
+  padding: 0 0.15em;
+  margin: 0 -0.15em;
+  background-image: linear-gradient(var(--color-lime), var(--color-lime));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 2px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition:
+    background-size 0.3s ease,
+    color 0.3s ease;
+}
+
+.hobby-link:hover,
+.hobby-link:focus-visible {
+  color: var(--color-ink-950);
+  background-size: 100% 100%;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .hobby-link {
+    transition: none;
+  }
+
   .eq-bar {
     animation: none;
     transform: scaleY(0.7);

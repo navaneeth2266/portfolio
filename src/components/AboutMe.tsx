@@ -1,4 +1,6 @@
+import { hobbies } from "@/lib/hobbies";
 import Float from "./Float";
+import HobbyLink from "./HobbyLink";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import NowPlaying from "./NowPlaying";
@@ -20,8 +22,11 @@ export default function AboutMe() {
           <Reveal delay={0.3} className="mt-8 max-w-xl border-l-2 border-lime/60 pl-6">
             <p className="font-poppins text-base leading-relaxed text-cream-dim/90">
               When I&apos;m off the clock, I like to keep things hands-on. You&apos;ll
-              usually find me wrenching on my motorcycle, planning my next
-              camping trip, or unwinding with video games and indie rock.
+              usually find me wrenching on my motorcycle, planning my next{" "}
+              <HobbyLink href={hobbies.camping.href}>camping trip</HobbyLink>, or
+              unwinding with video games and indie rock. I also love to{" "}
+              <HobbyLink href={hobbies.crafts.href}>craft things</HobbyLink>,
+              paint, and <HobbyLink href={hobbies.drawing.href}>draw designs</HobbyLink>.
             </p>
           </Reveal>
 
