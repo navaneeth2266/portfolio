@@ -135,10 +135,25 @@ body {
   animation: eq 0.9s ease-in-out infinite;
 }
 
+/* Slow spin for the Spotify icon, like a record */
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .eq-bar {
     animation: none;
     transform: scaleY(0.7);
+  }
+
+  .spin-slow {
+    animation: none;
   }
 }
 

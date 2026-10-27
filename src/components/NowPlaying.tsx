@@ -33,7 +33,6 @@ export default function NowPlaying() {
     const controller = new AbortController();
 
     const load = async () => {
-      if (document.hidden) return;
       try {
         const res = await fetch("/api/spotify", { signal: controller.signal });
         if (!res.ok) throw new Error(String(res.status));
@@ -43,11 +42,18 @@ export default function NowPlaying() {
       }
     };
 
+    // Always fetch once on mount; after that only refresh while the tab is visible.
+    const refresh = () => {
+      if (!document.hidden) load();
+    };
+
     load();
-    const timer = window.setInterval(load, POLL_MS);
+    const timer = window.setInterval(refresh, POLL_MS);
+    document.addEventListener("visibilitychange", refresh);
     return () => {
       controller.abort();
       window.clearInterval(timer);
+      document.removeEventListener("visibilitychange", refresh);
     };
   }, []);
 
@@ -80,8 +86,9 @@ export default function NowPlaying() {
           )}
           <div className="min-w-0 flex-1">
             <p className={labelClass}>
-              {track.isPlaying ? <Equalizer /> : <SpotifyIcon className="size-3.5" />}
+              <SpotifyIcon className="spin-slow size-3.5" />
               {track.isPlaying ? "NOW PLAYING" : "RECENTLY PLAYED"}
+              {track.isPlaying && <Equalizer />}
             </p>
             <p className="mt-1 truncate font-display text-lg font-bold text-cream transition-colors group-hover:text-lime">
               {track.title}
@@ -92,7 +99,7 @@ export default function NowPlaying() {
       ) : (
         <a href={spotifyProfileUrl} target="_blank" rel="noopener noreferrer" className={`group ${rowClass}`}>
           <div className={`${coverClass} flex items-center justify-center bg-ink-800 text-lime`}>
-            <SpotifyIcon className="size-8" />
+            <SpotifyIcon className="spin-slow size-8" />
           </div>
           <div className="min-w-0 flex-1">
             <p className={labelClass}>ON SPOTIFY</p>
