@@ -4,6 +4,7 @@ import SpotifyIcon from "./SpotifyIcon";
 
 const socials = [
   { label: "Email", href: "mailto:navaneethkrishnanpk02@gmail.com" },
+  { label: "WhatsApp", href: "https://wa.me/919745232839" },
   { label: "Instagram", href: "https://www.instagram.com/navaneeth___krishnan_/?hl=en" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/navaneeth-krishnan-pk/" },
   { label: "Behance", href: "https://www.behance.net/navaneekrishna159" },
