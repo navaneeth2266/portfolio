@@ -34,8 +34,8 @@ export default function AboutMe() {
           </Reveal>
         </div>
 
-        <div className="relative hidden items-center justify-center md:flex">
-          <VinylNotes className="w-72 lg:w-96" />
+        <div className="relative flex items-center justify-center">
+          <VinylNotes className="w-52 sm:w-60 md:w-72 lg:w-96" />
         </div>
       </div>
     </section>
