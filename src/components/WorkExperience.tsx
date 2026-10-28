@@ -13,6 +13,10 @@ const roles = [
     companyUrl: "https://mathewvoyages.com/",
     airplane: true,
     color: "text-lime",
+    bodyLink: {
+      text: "social media content",
+      href: "https://www.facebook.com/share/r/19Z9YZcoU6/",
+    },
     body: `Directed full cycle digital marketing and Meta ad strategies for international tour packages to Uzbekistan Oman and France. Managed all daily marketing operations from creating high performing social media content to developing optimized landing pages consistently driving audience engagement and sustained conversion growth`,
   },
   {
@@ -26,6 +30,30 @@ const roles = [
     body: `Engineered Python scripts that streamlined core company operations and drastically cut time spent on repetitive manual tasks. Built and deployed internal tools for automated hotel voucher generation real time flight fare tracking and metadata management significantly improving overall operational efficiency.`,
   },
 ];
+
+type Role = (typeof roles)[number];
+
+// Body copy with an optional phrase turned into a link to the work it describes.
+function RoleBody({ role }: { role: Role }) {
+  const { body, bodyLink } = role;
+  if (!bodyLink) return <>{body}</>;
+
+  const [before, after] = body.split(bodyLink.text);
+  return (
+    <>
+      {before}
+      <a
+        href={bodyLink.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hobby-link"
+      >
+        {bodyLink.text}
+      </a>
+      {after}
+    </>
+  );
+}
 
 export default function WorkExperience() {
   return (
@@ -74,7 +102,7 @@ export default function WorkExperience() {
                 </p>
               )}
               <p className="mt-3 max-w-md font-poppins whitespace-pre-wrap text-base leading-relaxed text-cream-dim">
-                {role.body}
+                <RoleBody role={role} />
               </p>
             </Reveal>
           ))}
