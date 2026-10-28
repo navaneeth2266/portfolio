@@ -60,7 +60,8 @@ export default function NowPlaying() {
   const track = status && status.configured ? status.track : null;
 
   return (
-    <div aria-live="polite">
+    // translate="no": React keeps updating this text, which breaks if the translator has rewritten it
+    <div aria-live="polite" translate="no">
       {status === undefined ? (
         <div className={`${rowClass} animate-pulse`} aria-label="Loading Spotify">
           <div className={`${coverClass} bg-ink-800`} />

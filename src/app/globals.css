@@ -42,6 +42,24 @@ body {
   color: var(--color-cream);
 }
 
+/* Google Translate is driven from our own language picker, so hide its banner
+   and hover tooltip and undo the top offset it adds to the page. */
+body {
+  top: 0 !important;
+}
+
+body > .skiptranslate,
+.skiptranslate iframe,
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+
 /* Stacked drop-shadow poster heading, e.g. "WORK EXPERIENCE" */
 .heading-stack {
   font-family: var(--font-display);

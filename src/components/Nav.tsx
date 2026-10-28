@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const links = [
   { href: "#about", label: "About" },
@@ -52,39 +53,43 @@ export default function Nav() {
           NK<span className="text-lime">.</span>
         </a>
 
-        <ul className="hidden gap-8 sm:flex">
-          {links.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                onClick={(e) => handleNavClick(e, link.href)}
-                className="group relative font-sans text-sm uppercase tracking-widest text-cream-dim transition-colors hover:text-cream"
-              >
-                {link.label}
-                <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-lime transition-all duration-300 group-hover:w-full" />
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="flex items-center gap-6 sm:gap-8">
+          <ul className="hidden gap-8 sm:flex">
+            {links.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  onClick={(e) => handleNavClick(e, link.href)}
+                  className="group relative font-sans text-sm uppercase tracking-widest text-cream-dim transition-colors hover:text-cream"
+                >
+                  {link.label}
+                  <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-lime transition-all duration-300 group-hover:w-full" />
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        <button
-          onClick={() => setOpen((o) => !o)}
-          aria-label="Toggle menu"
-          className="flex flex-col gap-1.5 sm:hidden"
-        >
-          <motion.span
-            animate={{ rotate: open ? 45 : 0, y: open ? 6 : 0 }}
-            className="h-0.5 w-6 bg-cream"
-          />
-          <motion.span
-            animate={{ opacity: open ? 0 : 1 }}
-            className="h-0.5 w-6 bg-cream"
-          />
-          <motion.span
-            animate={{ rotate: open ? -45 : 0, y: open ? -6 : 0 }}
-            className="h-0.5 w-6 bg-cream"
-          />
-        </button>
+          <LanguageSwitcher />
+
+          <button
+            onClick={() => setOpen((o) => !o)}
+            aria-label="Toggle menu"
+            className="flex flex-col gap-1.5 sm:hidden"
+          >
+            <motion.span
+              animate={{ rotate: open ? 45 : 0, y: open ? 6 : 0 }}
+              className="h-0.5 w-6 bg-cream"
+            />
+            <motion.span
+              animate={{ opacity: open ? 0 : 1 }}
+              className="h-0.5 w-6 bg-cream"
+            />
+            <motion.span
+              animate={{ rotate: open ? -45 : 0, y: open ? -6 : 0 }}
+              className="h-0.5 w-6 bg-cream"
+            />
+          </button>
+        </div>
       </nav>
 
       <AnimatePresence>

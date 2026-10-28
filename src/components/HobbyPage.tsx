@@ -3,6 +3,7 @@ import Link from "next/link";
 import { hobbies, type Hobby } from "@/lib/hobbies";
 import Footer from "./Footer";
 import GridPatch from "./GridPatch";
+import LanguageSwitcher from "./LanguageSwitcher";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
@@ -15,13 +16,16 @@ export default function HobbyPage({ hobby }: { hobby: Hobby }) {
         <Link href="/" className="font-pixel text-lg tracking-wide text-bubblegum">
           NK<span className="text-lime">.</span>
         </Link>
-        <Link
-          href="/#about"
-          className="group relative font-pixel text-sm tracking-wide text-cream-dim transition-colors hover:text-lime"
-        >
-          ← Back to portfolio
-          <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-lime transition-all duration-300 group-hover:w-full" />
-        </Link>
+        <div className="flex items-center gap-6">
+          <Link
+            href="/#about"
+            className="group relative font-pixel text-sm tracking-wide text-cream-dim transition-colors hover:text-lime"
+          >
+            ← Back to portfolio
+            <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-lime transition-all duration-300 group-hover:w-full" />
+          </Link>
+          <LanguageSwitcher />
+        </div>
       </header>
 
       <main className="relative overflow-hidden pb-28 pt-16">

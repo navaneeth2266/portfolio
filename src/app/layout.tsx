@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Chakra_Petch, Silkscreen, Inter, Poppins } from "next/font/google";
+import GoogleTranslate from "@/components/GoogleTranslate";
 import "./globals.css";
 
 const chakraPetch = Chakra_Petch({
@@ -43,6 +44,7 @@ export default function RootLayout({
     >
       <body className="min-h-full bg-ink-900 font-sans text-cream antialiased">
         {children}
+        <GoogleTranslate />
       </body>
     </html>
   );
