@@ -3,6 +3,7 @@ import HobbyLink from "./HobbyLink";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import NowPlaying from "./NowPlaying";
+import VolunteeringLink from "./VolunteeringLink";
 import VinylNotes from "./doodles/VinylNotes";
 
 export default function AboutMe() {
@@ -25,7 +26,8 @@ export default function AboutMe() {
               <HobbyLink href={hobbies.camping.href}>camping trip</HobbyLink>, or
               unwinding with video games and indie rock. I also love to{" "}
               <HobbyLink href={hobbies.crafts.href}>craft things</HobbyLink>,
-              paint, and <HobbyLink href={hobbies.drawing.href}>draw designs</HobbyLink>.
+              paint, and <HobbyLink href={hobbies.drawing.href}>draw designs</HobbyLink>. I do{" "}
+              <VolunteeringLink>volunteering</VolunteeringLink> too.
             </p>
           </Reveal>
 

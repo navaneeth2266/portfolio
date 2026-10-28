@@ -189,7 +189,41 @@ body {
   animation: note-bob 3.4s ease-in-out infinite;
 }
 
+/* Volunteering popup: panel rises in while the backdrop fades */
+@keyframes dialog-pop {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes dialog-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.volunteer-dialog[open] {
+  animation: dialog-pop 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.volunteer-dialog[open]::backdrop {
+  animation: dialog-fade 0.3s ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .volunteer-dialog[open],
+  .volunteer-dialog[open]::backdrop {
+    animation: none;
+  }
+
   .note-bob {
     animation: none;
   }
