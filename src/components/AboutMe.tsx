@@ -1,10 +1,9 @@
 import { hobbies } from "@/lib/hobbies";
-import Float from "./Float";
 import HobbyLink from "./HobbyLink";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import NowPlaying from "./NowPlaying";
-import Camera from "./doodles/Camera";
+import VinylNotes from "./doodles/VinylNotes";
 
 export default function AboutMe() {
   return (
@@ -36,9 +35,7 @@ export default function AboutMe() {
         </div>
 
         <div className="relative hidden items-center justify-center md:flex">
-          <Float duration={6} range={16}>
-            <Camera className="w-64 lg:w-80" />
-          </Float>
+          <VinylNotes className="w-72 lg:w-96" />
         </div>
       </div>
     </section>
