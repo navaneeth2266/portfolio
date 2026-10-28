@@ -37,16 +37,17 @@ export default function HobbyPage({ hobby }: { hobby: Hobby }) {
           </Reveal>
 
           {hobby.gallery.length > 0 ? (
-            <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-              {hobby.gallery.map((photo) => (
-                <Reveal key={photo.src}>
-                  <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border-4 border-ink-950 shadow-[8px_8px_0_rgba(0,0,0,0.45)]">
+            <div className="mt-16 grid grid-cols-1 items-start gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              {hobby.gallery.map((photo, i) => (
+                <Reveal key={photo.src} delay={(i % 3) * 0.1}>
+                  <div className="overflow-hidden rounded-2xl border-4 border-ink-950 shadow-[8px_8px_0_rgba(0,0,0,0.45)]">
                     <Image
                       src={photo.src}
                       alt={photo.alt}
-                      fill
+                      width={photo.width}
+                      height={photo.height}
                       sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                      className="object-cover"
+                      className="h-auto w-full"
                     />
                   </div>
                 </Reveal>

@@ -3,8 +3,8 @@ export type Hobby = {
   label: string;
   lines: string[];
   intro: string;
-  /** Add photos here, e.g. { src: "/hobbies/camping/lake.jpg", alt: "Lakeside camp" } */
-  gallery: { src: string; alt: string }[];
+  /** Add photos here, e.g. { src: "/hobbies/camping/lake.jpg", alt: "Lakeside camp", width: 1280, height: 720 } */
+  gallery: { src: string; alt: string; width: number; height: number }[];
 };
 
 export const hobbies = {
@@ -22,7 +22,26 @@ export const hobbies = {
     lines: ["CRAFT", "THINGS"],
     intro:
       "I love making things with my hands. If it can be cut, folded, glued or painted, I'm probably going to try it.",
-    gallery: [],
+    gallery: [
+      {
+        src: "/hobbies/crafts/krishna-drawing.jpg",
+        alt: "Pen drawing of Krishna with a flute on green paper",
+        width: 721,
+        height: 1280,
+      },
+      {
+        src: "/hobbies/crafts/spiderman-wall-art.jpg",
+        alt: "Painted Spider-Man mask with three lightning bolts on a wall",
+        width: 721,
+        height: 1280,
+      },
+      {
+        src: "/hobbies/crafts/paper-bats.jpg",
+        alt: "Black paper bats stuck in a wall corner",
+        width: 721,
+        height: 1280,
+      },
+    ],
   },
   drawing: {
     href: "/drawing",
