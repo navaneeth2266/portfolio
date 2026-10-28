@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Float from "./Float";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
@@ -10,6 +11,7 @@ const roles = [
     title: "Digital Marketing Executive",
     company: "Mathew Voyages Pvt Ltd",
     companyUrl: "https://mathewvoyages.com/",
+    airplane: true,
     color: "text-lime",
     body: `Directed full cycle digital marketing and Meta ad strategies for international tour packages to Uzbekistan Oman and France. Managed all daily marketing operations from creating high performing social media content to developing optimized landing pages consistently driving audience engagement and sustained conversion growth`,
   },
@@ -33,12 +35,30 @@ export default function WorkExperience() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 px-6 md:grid-cols-[1fr_1fr] md:items-start">
         <div className="order-2 space-y-14 md:order-1">
           {roles.map((role, i) => (
-            <Reveal key={role.title} delay={i * 0.12}>
+            <Reveal key={role.title} delay={i * 0.12} className={role.airplane ? "relative" : ""}>
+              {role.airplane && (
+                // Beside the first role: top-right on phones, out in the empty
+                // space to the right of the paragraph from tablet up.
+                <Float
+                  className="pointer-events-none absolute right-0 top-7 w-16 sm:w-20 md:bottom-2 md:left-full md:right-auto md:top-auto md:ml-8 md:w-28 lg:w-40"
+                  duration={6}
+                  range={8}
+                  rotateRange={2}
+                >
+                  <Image
+                    src="/doodles/airplane.svg"
+                    alt=""
+                    width={481}
+                    height={401}
+                    className="h-auto w-full"
+                  />
+                </Float>
+              )}
               <h3 className={`font-display font-bold text-3xl uppercase tracking-wide sm:text-4xl hollow-purple-text ${role.color}`}>
                 {role.title}
               </h3>
               {role.company && (
-                <p className="mt-1 font-poppins text-lg tracking-wide text-cream-dim/70">
+                <p className="mt-1 font-poppins text-lg tracking-wide text-cream">
                   {role.companyUrl ? (
                     <a
                       href={role.companyUrl}
