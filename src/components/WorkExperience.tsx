@@ -38,7 +38,7 @@ export default function WorkExperience() {
                 {role.title}
               </h3>
               {role.company && (
-                <p className="mt-1 font-poppins text-xs tracking-wide text-cream-dim/70">
+                <p className="mt-1 font-poppins text-lg tracking-wide text-cream-dim/70">
                   {role.companyUrl ? (
                     <a
                       href={role.companyUrl}
